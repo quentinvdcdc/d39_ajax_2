@@ -2,7 +2,7 @@
 
 Alors alors;
 
-# ToDoList
+## ToDoList
 
  KommenKonKorrige?
 ====== 
@@ -21,10 +21,3 @@ C'est tout. __Amuse-toi bien!__
 ##### Martin François -> @tinmar
 
 ##### Xavier Refour -> @Xavier.Refour
-
-
-
-
-
-
-![](https://media.giphy.com/media/3oKHWtXlzTHeuVewtq/giphy.gif)
