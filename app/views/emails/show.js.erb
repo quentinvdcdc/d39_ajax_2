@@ -1,0 +1,14 @@
+/*for (let i = 0; i < $('td').length; i++){
+	$(`td:eq(`+ i + `)`).on("click",function(){
+		console.log('supercool')
+ 		$(`tr:eq(`+ i + `)`).insertAdjacentHTML("beforeend", "<%= j render 'email', email: @email %>");
+	});
+}*/
+
+// $(`tr:eq(<%= @email.id %>)`).html("<%= escape_javascript(render @email) %>");
+document.querySelectorAll('tr')[<%= @email.id %>].firstChild.style.fontSize = "1.15rem";
+document.querySelectorAll('tr')[<%= @email.id %>].insertAdjacentHTML("beforeend", "<%= j render 'email', email: @email %>");
+document.querySelectorAll('tr')[<%= @email.id %>].childNodes.forEach(function(element){
+	//element.style.backgroundColor = "inherit";
+	element.firstChild.classList.remove("not-read");
+});

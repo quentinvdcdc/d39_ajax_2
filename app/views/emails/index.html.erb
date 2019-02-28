@@ -1,0 +1,16 @@
+<table>
+  <thead>
+      <tr>
+        <th>The table header</th>
+        <th>The content header</th>
+        <th>The delete option</th>
+      </tr>
+  </thead>
+	<tbody>
+		<% @emails.each do |email| %>
+			<tr><td><%= link_to email.object, email_path(email.id), remote: true, :class => ("not-read" if is_not_read?(email)) %></td></tr>
+		<% end %>
+	</tbody>
+</table>
+
+
