@@ -7,10 +7,10 @@ Alors alors;
  KommenKonKorrige?
 ====== 
 
-![Tu cliques ici pour te rendre vers l'app en production.♥](https://the-todo-app-d39.herokuapp.com/)
+[Tu cliques ici pour te rendre vers l'app en production.♥](https://the-todo-app-d39.herokuapp.com/)
 
                                            
-C'est tout. Amuse-toi bien!
+C'est tout. __Amuse-toi bien!__
 
 ![](https://media.giphy.com/media/3oKHWtXlzTHeuVewtq/giphy.gif)
 
