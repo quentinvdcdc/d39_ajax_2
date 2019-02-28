@@ -9,6 +9,7 @@ class EmailsController < ApplicationController
 
 	def show
 		@email = Email.find(params[:id])
+		@rank = Email.ids.index(@email.id)
 		@email.read = true
 		@email.save
   	@emails = Email.all # needed for sidebar, probably better to use a cell for this
@@ -18,7 +19,15 @@ class EmailsController < ApplicationController
   	end
 	end
 
-	def edit
+	def destroy
+		@emails = Email.all
+		@email = Email.find(params[:id])
+		@rank = Email.ids.index(@email.id)
+
+    @email.destroy
+    respond_to do |format|
+      format.js
+    end
 	end
 	
 end

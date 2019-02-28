@@ -6,9 +6,9 @@
 }*/
 
 // $(`tr:eq(<%= @email.id %>)`).html("<%= escape_javascript(render @email) %>");
-document.querySelectorAll('tr')[<%= @email.id %>].firstChild.style.fontSize = "1.15rem";
-document.querySelectorAll('tr')[<%= @email.id %>].insertAdjacentHTML("beforeend", "<%= j render 'email', email: @email %>");
-document.querySelectorAll('tr')[<%= @email.id %>].childNodes.forEach(function(element){
+document.querySelectorAll('tr')[<%= @rank %> + 1].firstChild.style.fontSize = "1.15rem";
+document.querySelectorAll('tr')[<%= @rank %> + 1].insertAdjacentHTML("beforeend", "<%= j render 'email', email: @email %>");
+document.querySelectorAll('tr')[<%= @rank %> + 1].childNodes.forEach(function(element){
 	//element.style.backgroundColor = "inherit";
 	element.firstChild.classList.remove("not-read");
 });
